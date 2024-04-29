@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ $(which pkexec) ]; then
+	sudo -E "/usr/bin/calamares" "$@"
+else
+	/usr/bin/calamares "$@"
+fi

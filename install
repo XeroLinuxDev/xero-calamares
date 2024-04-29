@@ -1,0 +1,26 @@
+#!/bin/bash
+set -e
+
+#software from 'normal' repositories
+sudo pacman -S --noconfirm --needed qt5-translations
+sudo pacman -S --noconfirm --needed qt5-tools
+sudo pacman -S --noconfirm --needed extra-cmake-modules
+sudo pacman -S --noconfirm --needed dmidecode
+sudo pacman -S --noconfirm --needed boost
+sudo pacman -S --noconfirm --needed boost-libs
+sudo pacman -S --noconfirm --needed yaml-cpp
+sudo pacman -S --noconfirm --needed kpmcore
+sudo pacman -S --noconfirm --needed kconfig
+sudo pacman -S --noconfirm --needed kparts
+sudo pacman -S --noconfirm --needed hwinfo
+sudo pacman -S --noconfirm --needed kcoreaddons
+sudo pacman -S --noconfirm --needed plasma-framework
+sudo pacman -S --noconfirm --needed qt5-xmlpatterns
+
+#yay -S --noconfirm pythonqt
+paru -S --noconfirm --needed mkinitcpio-openswap
+paru -S --noconfirm --needed ckbcomp
+
+echo "################################################################"
+echo "###################     software installed      ################"
+echo "################################################################"
