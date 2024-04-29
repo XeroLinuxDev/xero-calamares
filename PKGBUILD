@@ -13,8 +13,7 @@ depends=('boost-libs' 'ckbcomp' 'cryptsetup' 'doxygen' 'efibootmgr' 'gptfdisk' '
 makedepends=('boost' 'cmake' 'extra-cmake-modules' 'git' 'ninja' 'python-jsonschema' 'python-pyaml' 'python-unidecode' 'qt6-tools')
 
 source=("calamares::https://github.com/erikdubois/calamares/archive/refs/tags/$pkgver-$pkgrel.tar.gz"
-        "calamares_polkit"
-        "49-nopasswd-calamares.rules")
+        "calamares_polkit")
 
 prepare() {
 
@@ -78,3 +77,6 @@ package() {
 	install -Dm644 "$srcdir/xerolinux-debug.desktop" "$pkgdir/usr/share/applications/xerolinux-debug.desktop"
 	install -Dm755 "$srcdir/calamares_polkit" "$pkgdir/usr/bin/calamares_polkit"
 	rm "$pkgdir/usr/share/applications/calamares.desktop"
+}
+sha256sums=('72089a695e64858156b9ef9bc9207079c5afc4f31752ff24456c4a2146261375'
+            'e61245ff7e4c3af6f05a9fe9a3fcf47f2780d9aa88c11eab02a35fac446cf1e1')
