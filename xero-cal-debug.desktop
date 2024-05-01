@@ -1,12 +1,11 @@
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Install XeroLinux
-Comment=Installer for XeroLinux
+Name=Install XeroLinux Debug
+Comment=Installer for XeroLinux debug
 GenericName=System Installer
 Keywords=calamares;system;installer;
-TryExec=/usr/bin/calamares_polkit %f -style breeze
-Exec=/usr/bin/calamares_polkit %f -style breeze
+Exec=sudo -E calamares -D8
 Icon=calamares
 Terminal=false
 Type=Application

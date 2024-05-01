@@ -16,10 +16,8 @@ sudo pacman -S --noconfirm --needed hwinfo
 sudo pacman -S --noconfirm --needed kcoreaddons
 sudo pacman -S --noconfirm --needed plasma-framework
 sudo pacman -S --noconfirm --needed qt5-xmlpatterns
-
-#yay -S --noconfirm pythonqt
-paru -S --noconfirm --needed mkinitcpio-openswap
-paru -S --noconfirm --needed ckbcomp
+sudo pacman -S --noconfirm --needed mkinitcpio-openswap
+sudo pacman -S --noconfirm --needed ckbcomp
 
 echo "################################################################"
 echo "###################     software installed      ################"
