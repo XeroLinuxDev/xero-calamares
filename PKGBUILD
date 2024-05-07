@@ -56,7 +56,6 @@ backup=('usr/share/calamares/modules/bootloader.conf'
 
 source=($pkgname::git+$url#commit=eb1e5a2
 	"xero-cal.desktop"
-	"xero-cal-debug.desktop"
 	"calamares_polkit")
 
 sha256sums=('b9be31fc297a18140e1493a3239c07f6f46c0af309fea1af72da393801efdb93'
